@@ -11,20 +11,34 @@ import me3 from "../public/IMG-2435.jpg";
 import me4 from "../public/IMG-2577.jpg";
 import me5 from "../public/IMG-2657.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="flex flex-col md:flex-row md:mt-2">
-      <div className="w-[100%] md:w-[45%]">
-        <Image src={me5} className="object-cover"></Image>
+    <div className="flex flex-col">
+      <div className="flex flex-col md:flex-row md:mt-2">
+        <div className="w-[100%] md:w-[58%] lg:w-[68%]">
+          <Image src={me5} className="object-cover"></Image>
+        </div>
+        <div className="flex flex-col justify-center w-[80%] md:w-[67%] lg:w-[77%] mx-auto my-[3rem]">
+          <h1 className="md:relative md:left-[-19%] text-left leading-[1.25] font-lora capitalize tracking-wider text-6xl">
+            Lee Goullaud
+          </h1>
+          <h2 className="md:ml-[4rem] my-4 text-[1.4rem] font-openSans uppercase font-thin">
+            full stack developer
+          </h2>
+        </div>
       </div>
-      <div className="flex flex-col w-[80%] md:w-[67%] mx-auto my-[3rem]">
-        <h1 className="md:relative md:left-[-19%] text-left leading-[1.25] font-lora capitalize tracking-wider text-6xl">
-          Lee Goullaud
-        </h1>
-        <h2 className="md:ml-[4rem] my-4 text-[1.4rem] font-openSans uppercase font-thin">
-          full stack developer
-        </h2>
+      {/* CTA */}
+      <div className="flex flex-col justify-center items-center py-[8rem] lg:py-[6.5rem] mx-[2rem] md:mx-[6rem]">
+        <h3 className="font-lora text-center leading-[1.2] lowercase tracking-widest mb-[1rem] text-[1.5rem] md:text-[2rem]">
+          Your dream website custom-built for you
+        </h3>
+        <Link href="/about">
+          <button className="text-[1rem] font-openSans uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#4d574F] md:text-[1.2rem]">
+            learn more
+          </button>
+        </Link>
       </div>
     </div>
   );
