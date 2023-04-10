@@ -1,6 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
+import {
+  RiLinkedinLine,
+  RiGithubLine,
+  RiGithubFill,
+  RiLinkedinFill,
+} from "react-icons/ri";
 import { GrClose, GrMenu } from "react-icons/gr";
 import Link from "next/link";
 
@@ -70,31 +75,34 @@ export default function NavBar() {
         <h1 className=" font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
           <Link href="/"> lg.</Link>
         </h1>
-        <ul className="flex justify-evenly items-center font-openSans font-thin w-[50%]">
+        <ul className="flex justify-center text-sm items-center font-openSans font-thin w-[40%] xl:w-[30%]">
           <Link href="/">
-            <li className="uppercase tracking-wider  ">Home</li>
+            <li className="uppercase tracking-wider mx-2 ">Home</li>
           </Link>
           <Link href="/">
-            <li className="uppercase tracking-wider  ">Work</li>
+            <li className="uppercase tracking-wider mx-2 ">Work</li>
           </Link>
           <Link href="/">
-            <li className="uppercase tracking-wider  ">About</li>
+            <li className="uppercase tracking-wider mx-2 ">About</li>
           </Link>
           <Link href="/">
-            <li className="uppercase tracking-wider ">Contact</li>
+            <li className="uppercase tracking-wider mx-2 ">Contact</li>
           </Link>
-
-          <li className=" flex  text-xl uppercase tracking-wider ">
-            <Link
-              href="https://www.linkedin.com/in/lee-goullaud/"
-              target="_blank"
-            >
-              <RiLinkedinFill className=" mx-1 text-4xl rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
-            </Link>
-            <Link href="https://github.com/egoullaud" target="_blank">
-              <RiGithubFill className=" mx-1 text-4xl rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
-            </Link>
-          </li>
+          <Link
+            href="https://www.linkedin.com/in/lee-goullaud/"
+            target="_blank"
+          >
+            <li className="uppercase tracking-wider  ">
+              {" "}
+              <RiLinkedinLine className="text-2xl rounded p-1 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+            </li>
+          </Link>
+          <Link href="https://github.com/egoullaud" target="_blank">
+            <li className="uppercase tracking-wider">
+              {" "}
+              <RiGithubLine className="text-2xl rounded p-1 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>
