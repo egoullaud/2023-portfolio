@@ -4,4 +4,13 @@
 
 body {
   color: #2c2c2c;
+  overflow-x: hidden;
+}
+
+.absolute.navbar {
+  z-index: 1;
+}
+
+.flex.hero {
+  z-index: 0;
 }
