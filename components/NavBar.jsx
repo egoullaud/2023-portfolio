@@ -25,14 +25,14 @@ export default function NavBar() {
           onClick={handleNav}
         >
           {!showNav ? (
-            <div className="flex justify-between items-center mx-[4rem] w-[100%]">
-              <h1 className=" font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+            <div className="flex justify-between items-center mx-[2rem] w-[100%] pb-[1rem]">
+              <h1 className=" pt-[1rem] font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
                 <Link href="/"> lg.</Link>
               </h1>
-              <GrMenu className="text-6xl hover:bg-[#d9d4d0] hover:transition-all hover:duration-500 rounded p-2  " />
+              <GrMenu className="fixed right-8 top-0 text-6xl bg-[#f3efeb] rounded p-2 mt-1  " />
             </div>
           ) : (
-            <GrClose className="text-6xl z-50 rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500 mx-[4rem]" />
+            <GrClose className="fixed right-8 top-0 text-6xl z-50 rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 " />
           )}
         </div>
 
@@ -40,31 +40,39 @@ export default function NavBar() {
           className={
             !showNav
               ? "hidden"
-              : "absolute  z-40 top-0 left-0 w-[100%] transition-all duration-1000"
+              : "fixed  z-40 top-0 left-0 bottom-0 w-[100%] transition-all duration-1000"
           }
         >
           <ul className="z-30 flex flex-col  bg-white justify-center items-center pt-[5rem] font-openSans font-thin text-2xl w-[100%] h-full">
             <Link href="/">
-              <li className="uppercase tracking-wider m-[2rem] ">Home</li>
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+                Home
+              </li>
             </Link>
             <Link href="/">
-              <li className="uppercase tracking-wider m-[2rem] ">Work</li>
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+                Work
+              </li>
             </Link>
             <Link href="/">
-              <li className="uppercase tracking-wider m-[2rem] ">About</li>
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F] ">
+                About
+              </li>
             </Link>
             <Link href="/">
-              <li className="uppercase tracking-wider m-[2rem] ">Contact</li>
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+                Contact
+              </li>
             </Link>
             <li className=" flex justify-between uppercase tracking-wider  ">
               <Link
                 href="https://www.linkedin.com/in/lee-goullaud/"
                 target="_blank"
               >
-                <RiLinkedinFill className="m-4 text-5xl rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+                <RiLinkedinFill className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500" />
               </Link>
               <Link href="https://github.com/egoullaud" target="_blank">
-                <RiGithubFill className="m-4 text-5xl rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+                <RiGithubFill className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500" />
               </Link>
             </li>
           </ul>
@@ -77,16 +85,24 @@ export default function NavBar() {
         </h1>
         <ul className="flex justify-center text-sm items-center font-openSans font-thin w-[40%] xl:w-[30%]">
           <Link href="/">
-            <li className="uppercase tracking-wider mx-2 ">Home</li>
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+              Home
+            </li>
           </Link>
           <Link href="/">
-            <li className="uppercase tracking-wider mx-2 ">Work</li>
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+              Work
+            </li>
           </Link>
           <Link href="/">
-            <li className="uppercase tracking-wider mx-2 ">About</li>
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+              About
+            </li>
           </Link>
           <Link href="/">
-            <li className="uppercase tracking-wider mx-2 ">Contact</li>
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+              Contact
+            </li>
           </Link>
           <Link
             href="https://www.linkedin.com/in/lee-goullaud/"
@@ -94,13 +110,13 @@ export default function NavBar() {
           >
             <li className="uppercase tracking-wider  ">
               {" "}
-              <RiLinkedinLine className="text-2xl rounded p-1 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+              <RiLinkedinLine className="text-2xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500" />
             </li>
           </Link>
           <Link href="https://github.com/egoullaud" target="_blank">
             <li className="uppercase tracking-wider">
               {" "}
-              <RiGithubLine className="text-2xl rounded p-1 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+              <RiGithubLine className="text-2xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500" />
             </li>
           </Link>
         </ul>
