@@ -17,14 +17,14 @@ function Hero() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col md:flex-row md:mt-2">
-        <div className="w-[100%] md:w-[58%] lg:w-[68%]">
+        <div className="w-[100%] md:w-[58%] lg:w-[68%] xl:w-[72%]">
           <Image src={me5} className="object-cover"></Image>
         </div>
         <div className="flex flex-col justify-center w-[80%] md:w-[67%] lg:w-[77%] mx-auto my-[3rem]">
           <h1 className="md:relative md:left-[-19%] text-left leading-[1.25] font-lora capitalize tracking-wider text-6xl">
             Lee Goullaud
           </h1>
-          <h2 className="md:ml-[4rem] my-4 text-[1.4rem] font-openSans uppercase font-thin">
+          <h2 className="md:ml-4rem] mx-5 my-4 text-[1.4rem] font-openSans uppercase font-thin">
             full stack developer
           </h2>
         </div>
