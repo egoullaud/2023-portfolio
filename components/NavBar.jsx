@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {} from "react-icons/fi";
+import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 import { GrClose, GrMenu } from "react-icons/gr";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <nav>
       {/* Mobile */}
-      <div className="w-[100%]">
+      <div className="w-[100%]  lg:hidden">
         <div
           className="flex justify-end items-end w-[100%] transition-all duration-500 "
           onClick={handleNav}
@@ -24,10 +24,10 @@ export default function NavBar() {
               <h1 className=" font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
                 <Link href="/"> lg.</Link>
               </h1>
-              <GrMenu className="text-6xl hover:bg-slate-100 hover:transition-all hover:duration-500 rounded p-2  " />
+              <GrMenu className="text-6xl hover:bg-[#d9d4d0] hover:transition-all hover:duration-500 rounded p-2  " />
             </div>
           ) : (
-            <GrClose className="text-6xl z-20 rounded p-2 hover:bg-slate-100 hover:transition-all hover:duration-500 mx-[4rem]" />
+            <GrClose className="text-6xl z-20 rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500 mx-[4rem]" />
           )}
         </div>
 
@@ -35,10 +35,10 @@ export default function NavBar() {
           className={
             !showNav
               ? "flex opacity-0 h-[100%] z-0 transition-all duration-1000"
-              : "z-10 flex justify-center items-center h-[100%] opacity-100 w-[100%] transition-all duration-1000"
+              : "z-10 flex justify-center items-center h-full opacity-100 w-[100%] transition-all duration-1000"
           }
         >
-          <ul className="flex flex-col justify-center items-center mt-[5rem] font-openSans font-thin text-2xl w-[100%]">
+          <ul className="flex flex-col justify-center items-center mt-[5rem] font-openSans font-thin text-2xl w-[100%] h-full">
             <Link href="/">
               <li className="uppercase tracking-wider m-[2rem] ">Home</li>
             </Link>
@@ -51,8 +51,51 @@ export default function NavBar() {
             <Link href="/">
               <li className="uppercase tracking-wider m-[2rem] ">Contact</li>
             </Link>
+            <li className=" flex justify-between uppercase tracking-wider  ">
+              <Link
+                href="https://www.linkedin.com/in/lee-goullaud/"
+                target="_blank"
+              >
+                <RiLinkedinFill className="m-4 text-5xl rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+              </Link>
+              <Link href="https://github.com/egoullaud" target="_blank">
+                <RiGithubFill className="m-4 text-5xl rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+              </Link>
+            </li>
           </ul>
         </div>
+      </div>
+      {/* Desktop */}
+      <div className="hidden lg:flex lg:justify-between lg:items-center lg:mx-[10rem] lg:my-[1rem]">
+        <h1 className=" font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+          <Link href="/"> lg.</Link>
+        </h1>
+        <ul className="flex justify-evenly items-center font-openSans font-thin w-[50%]">
+          <Link href="/">
+            <li className="uppercase tracking-wider  ">Home</li>
+          </Link>
+          <Link href="/">
+            <li className="uppercase tracking-wider  ">Work</li>
+          </Link>
+          <Link href="/">
+            <li className="uppercase tracking-wider  ">About</li>
+          </Link>
+          <Link href="/">
+            <li className="uppercase tracking-wider ">Contact</li>
+          </Link>
+
+          <li className=" flex  text-xl uppercase tracking-wider ">
+            <Link
+              href="https://www.linkedin.com/in/lee-goullaud/"
+              target="_blank"
+            >
+              <RiLinkedinFill className=" mx-1 text-4xl rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+            </Link>
+            <Link href="https://github.com/egoullaud" target="_blank">
+              <RiGithubFill className=" mx-1 text-4xl rounded p-2 hover:bg-[#d9d4d0] hover:transition-all hover:duration-500" />
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
