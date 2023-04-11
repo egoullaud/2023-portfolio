@@ -19,23 +19,22 @@ export default function NavBar() {
   return (
     <nav>
       {/* Mobile */}
-      <div className="w-[100%] block lg:hidden">
-        <div
-          className="z-10 flex justify-end items-end  w-[100%] transition-all duration-500 "
-          onClick={handleNav}
-        >
-          {!showNav ? (
-            <div className="flex justify-between items-center mx-[2rem] w-[100%] pb-[1rem]">
-              <h1 className=" pt-[1rem] font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
-                <Link href="/"> lg.</Link>
-              </h1>
-              <GrMenu className="fixed right-8 top-0 text-6xl bg-[#f3efeb] rounded p-2 mt-1  " />
-            </div>
-          ) : (
-            <GrClose className="fixed right-8 top-0 text-6xl z-50 rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
-          )}
+      <div className="w-[100%] block lg:hidden md:px-[2rem]">
+        <div className="flex justify-between items-center mx-[2rem] w-[100%] pb-[1rem]">
+          <h1 className=" pt-[1rem] font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300">
+            <Link href="/"> lg.</Link>
+          </h1>
+          <div
+            className="z-50 flex justify-end items-end  w-[100%] transition-all duration-500 "
+            onClick={handleNav}
+          >
+            {!showNav ? (
+              <GrMenu className="fixed right-8 top-0 text-6xl hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-300 rounded p-2 mt-1  " />
+            ) : (
+              <GrClose className="fixed right-8 top-0 text-6xl z-50 rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
+            )}
+          </div>
         </div>
-
         <div
           className={
             !showNav
@@ -43,7 +42,7 @@ export default function NavBar() {
               : "fixed  z-40 top-0 left-0 bottom-0 w-[100%] transition-all duration-1000"
           }
         >
-          <ul className="z-30 flex flex-col  bg-white justify-center items-center pt-[5rem] font-openSans font-thin text-2xl w-[100%] h-full">
+          <ul className="z-30 flex flex-col  bg-white justify-center items-center pt-[1rem] md:pt-[10rem] md:justify-start font-openSans font-thin text-2xl w-[100%] h-full">
             <Link href="/">
               <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
                 Home
