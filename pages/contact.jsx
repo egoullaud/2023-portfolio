@@ -23,7 +23,7 @@ function contact() {
         className="flex flex-col font-openSans tracking-wider font-thin text-[#2c2c2c] w-[80%] md:w-[80%] lg:w-[50%] xl:w-[40%]"
       >
         {/* add honey pot */}
-        <input type="text" name="_honey" style="display:none" />
+        <input type="text" name="_honey" className="hidden" />
         {/*remove captcha  */}
         <input type="hidden" name="_captcha" value="false" />
         {/* redirect to success page on submit! */}
