@@ -30,7 +30,7 @@ function contact() {
         <input
           type="hidden"
           name="_next"
-          value="https://www.leegoullaud.com/submitted"
+          value="http://www.leegoullaud.com/submitted"
         />
 
         <div className="flex flex-col md:flex-row">
