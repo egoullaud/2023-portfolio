@@ -48,7 +48,7 @@ export default function NavBar() {
                 Home
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/work">
               <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
                 Work
               </li>
@@ -88,7 +88,7 @@ export default function NavBar() {
               Home
             </li>
           </Link>
-          <Link href="/">
+          <Link href="/work">
             <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
               Work
             </li>

@@ -20,7 +20,7 @@ function Footer() {
               Home
             </li>
           </Link>
-          <Link href="/">
+          <Link href="/work">
             <li className="uppercase tracking-wider my-[.5rem]  hover:transition-all hover:duration-500  hover:text-[#baccdb] ease-out duration-200">
               Work
             </li>
