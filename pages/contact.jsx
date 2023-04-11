@@ -18,7 +18,7 @@ function contact() {
         </Link>
       </p>
       <form
-        action="https://formsubmit.co/egoullaud@gmail.com"
+        action="https://formsubmit.co/aa9ace4fce53046497cccee0c34e5c3f"
         method="POST"
         className="flex flex-col font-openSans tracking-wider font-thin text-[#2c2c2c] w-[80%] md:w-[80%] lg:w-[50%] xl:w-[40%]"
       >
