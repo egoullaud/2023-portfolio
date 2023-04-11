@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import "@/styles/globals.css";
 import { Open_Sans, Lora } from "next/font/google";
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
     <main className={`${openSans.variable}, ${lora.variable}`}>
       <NavBar />
       <Component {...pageProps} />
+      <Footer />
     </main>
   );
 }
