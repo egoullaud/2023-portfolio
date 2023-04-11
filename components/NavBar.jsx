@@ -17,7 +17,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav class>
+    <nav>
       {/* Mobile */}
       <div className="w-[100%] block lg:hidden">
         <div
