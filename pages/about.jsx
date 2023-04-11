@@ -1,10 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import me1 from "../public/IMG-2418.jpg";
+
+import portrait1 from "../public/portrait1.jpg";
+import landscape1 from "../public/landscape1.jpg";
 import me2 from "../public/IMG-2424.jpg";
-import me3 from "../public/IMG-2435.jpg";
-import me4 from "../public/IMG-2577.jpg";
+import doggos from "../public/doggos.jpg";
+import portrait2 from "../public/portrait2.jpg";
+import blueLand from "../public/blue-land.jpg";
 import Skills from "@/components/Skills";
 
 function about() {
@@ -12,7 +15,7 @@ function about() {
     <div className="flex flex-col">
       <div className="flex flex-col md:flex-row">
         <div className="w-[100%] md:w-[45%] lg:w-[50%] xl:w-[50%]">
-          <Image src={me4} className="object-cover"></Image>
+          <Image src={me2} className="object-cover"></Image>
         </div>
 
         <div className="flex flex-col mx-[2rem] md:mx-[3rem] mt-[6rem]">
@@ -37,6 +40,18 @@ function about() {
         </div>
       </div>
       <Skills />
+      <div className="flex flex-col items-center justify-center md:flex-row px-[2rem] pb-[2rem]">
+        <Image
+          className="mb-6 md:w-[27%] object-fit md:mr-4"
+          src={portrait2}
+        ></Image>
+
+        <Image
+          className="mb-6 md:w-[40%] object-fit md:mr-4"
+          src={landscape1}
+        ></Image>
+        <Image className="mb-6 md:w-[27%] object-fit " src={doggos}></Image>
+      </div>
     </div>
   );
 }
