@@ -34,14 +34,18 @@ function about() {
             at my best when I am creating value through custom-built websites
             for my clients. If you're interested in working together,{" "}
             <Link href="/contact">
-              <button className="underline">get in touch here!</button>
+              <button className="underline hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300">
+                get in touch here!
+              </button>
             </Link>
           </p>
           <p className="font-openSans font-thin md:ml-[2rem] mb-2 lg:mr-[6rem]">
             If you are a company or recruiter looking to hire a fullstack
             developer,{" "}
             <Link href="/">
-              <button className="underline">check out my resume here!</button>
+              <button className="underline hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300">
+                check out my resume here!
+              </button>
             </Link>
           </p>
         </div>

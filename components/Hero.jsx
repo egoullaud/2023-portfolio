@@ -35,7 +35,7 @@ function Hero() {
           Your dream website custom-built for you
         </h3>
         <Link href="/about">
-          <button className="text-[1rem] font-openSans uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#4d574F] md:text-[1.2rem]">
+          <button className="text-[1rem] font-openSans uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300 md:text-[1.2rem]">
             learn more
           </button>
         </Link>

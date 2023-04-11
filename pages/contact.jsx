@@ -12,7 +12,9 @@ function contact() {
         expand your network, or chat about the joys of dogs! I'm also available
         by email at{" "}
         <Link href="mailto:egoullaud@gmail.com">
-          <button className="underline">egoullaud@gmail.com</button>
+          <button className="underline hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300">
+            egoullaud@gmail.com
+          </button>
         </Link>
       </p>
       <form
