@@ -26,6 +26,7 @@ function contact() {
         <input type="text" name="_honey" style="display:none" />
         {/*remove captcha  */}
         <input type="hidden" name="_captcha" value="false" />
+        {/* redirect to success page on submit! */}
         <input
           type="hidden"
           name="_next"
