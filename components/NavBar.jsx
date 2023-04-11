@@ -32,7 +32,7 @@ export default function NavBar() {
               <GrMenu className="fixed right-8 top-0 text-6xl bg-[#f3efeb] rounded p-2 mt-1  " />
             </div>
           ) : (
-            <GrClose className="fixed right-8 top-0 text-6xl z-50 rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 " />
+            <GrClose className="fixed right-8 top-0 text-6xl z-50 rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
           )}
         </div>
 
@@ -69,10 +69,10 @@ export default function NavBar() {
                 href="https://www.linkedin.com/in/lee-goullaud/"
                 target="_blank"
               >
-                <RiLinkedinFill className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500" />
+                <RiLinkedinFill className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
               </Link>
               <Link href="https://github.com/egoullaud" target="_blank">
-                <RiGithubFill className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500" />
+                <RiGithubFill className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
               </Link>
             </li>
           </ul>
@@ -110,13 +110,13 @@ export default function NavBar() {
           >
             <li className="uppercase tracking-wider  ">
               {" "}
-              <RiLinkedinLine className="text-2xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500" />
+              <RiLinkedinLine className="text-2xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
             </li>
           </Link>
           <Link href="https://github.com/egoullaud" target="_blank">
             <li className="uppercase tracking-wider">
               {" "}
-              <RiGithubLine className="text-2xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500" />
+              <RiGithubLine className="text-2xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
             </li>
           </Link>
         </ul>
