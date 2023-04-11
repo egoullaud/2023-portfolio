@@ -22,19 +22,26 @@ function about() {
           <h1 className="text-left leading-[1.25] font-lora lowercase tracking-wider text-5xl md:text-6xl pb-[2rem]">
             Hey, I'm lee!
           </h1>
-          <p className="font-openSans font-thin md:ml-[2rem] mb-2">
+          <p className="font-openSans font-thin md:ml-[2rem] mb-2 lg:mr-[6rem]">
             I am a fullstack developer who's passionate about building digital
             products that create accessibile, inclusive, and beautiful user
             experiences. I am a graduate of Skillcrush UX Design and Front End
             Coding Bootcamp and hold a BSc in Natural Resource Conservation from
             the University of British Columbia.
           </p>
-          <p className="font-openSans font-thin md:ml-[2rem] mb-2">
+          <p className="font-openSans font-thin md:ml-[2rem] mb-2 lg:mr-[6rem]">
             I have a deep love for learning and growth in all things, and I am
             at my best when I am creating value through custom-built websites
             for my clients. If you're interested in working together,{" "}
             <Link href="/contact">
               <button className="underline">get in touch here!</button>
+            </Link>
+          </p>
+          <p className="font-openSans font-thin md:ml-[2rem] mb-2 lg:mr-[6rem]">
+            If you are a company or recruiter looking to hire a fullstack
+            developer,{" "}
+            <Link href="/">
+              <button className="underline">check out my resume here!</button>
             </Link>
           </p>
         </div>
