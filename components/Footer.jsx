@@ -50,7 +50,7 @@ function Footer() {
           </p>
         </div>
       </div>
-      <p className="mt-[1rem] lg:my-[1rem] text-center uppercase font-openSans font-thin text-sm text-[#F4e9e7]">
+      <p className="mt-[1rem] mx-[4rem] lg:my-[1rem] text-center uppercase font-openSans font-thin text-sm text-[#F4e9e7]">
         © 2023 built by lee goullaud | design by Kay evans-stocks
       </p>
     </div>
