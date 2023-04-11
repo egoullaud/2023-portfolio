@@ -30,7 +30,7 @@ function Hero() {
         </div>
       </div>
       {/* CTA */}
-      <div className="flex flex-col justify-center items-center py-[8rem] lg:py-[6.5rem] mx-[2rem] md:mx-[6rem]">
+      <div className="flex flex-col justify-center items-center py-[8rem] lg:py-[7rem] mx-[2rem] md:mx-[6rem]">
         <h3 className="font-lora text-center leading-[1.2] lowercase tracking-widest mb-[1rem] text-[1.5rem] md:text-[2rem]">
           Your dream website custom-built for you
         </h3>
