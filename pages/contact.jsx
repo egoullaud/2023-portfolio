@@ -22,6 +22,16 @@ function contact() {
         method="POST"
         className="flex flex-col font-openSans tracking-wider font-thin text-[#2c2c2c] w-[80%] md:w-[80%] lg:w-[50%] xl:w-[40%]"
       >
+        {/* add honey pot */}
+        <input type="text" name="_honey" style="display:none" />
+        {/*remove captcha  */}
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://www.leegoullaud.com/submitted"
+        />
+
         <div className="flex flex-col md:flex-row">
           <div className="flex flex-col md:w-[50%] md:mr-2">
             <label className="italic py-1" htmlFor="firstName">
