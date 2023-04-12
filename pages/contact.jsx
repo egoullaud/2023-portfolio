@@ -3,16 +3,16 @@ import React from "react";
 
 function contact() {
   return (
-    <div className="my-[4rem] flex flex-col items-center justify-center">
-      <h1 className="text-center  leading-[1.25] font-lora lowercase tracking-wider text-5xl md:text-6xl pb-[2rem] ">
+    <div className="my-[2rem] flex flex-col items-center justify-center">
+      <h1 className="text-center leading-[1.25] font-alike lowercase tracking-wider text-5xl md:text-6xl pb-[2rem] ">
         Let's Connect
       </h1>
-      <p className="font-openSans font-thin mb-[2rem]  w-[80%] md:w-[80%] lg:w-[50%] xl:w-[40%]">
+      <p className="font-hind text-center tracking-wide font-thin mb-[2rem]  w-[80%] md:w-[80%] lg:w-[50%] xl:w-[40%]">
         Please don't hesitate to contact me if you'd like to work together,
         expand your network, or chat about the joys of dogs! I'm also available
         by email at{" "}
         <Link href="mailto:egoullaud@gmail.com">
-          <button className="underline hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300">
+          <button className="underline hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
             egoullaud@gmail.com
           </button>
         </Link>
@@ -20,7 +20,7 @@ function contact() {
       <form
         action="https://formsubmit.co/aa9ace4fce53046497cccee0c34e5c3f"
         method="POST"
-        className="flex flex-col font-openSans tracking-wider font-thin text-[#2c2c2c] w-[80%] md:w-[80%] lg:w-[50%] xl:w-[40%]"
+        className="flex flex-col font-hind tracking-wider font-thin text-[#2c2c2c] w-[80%] md:w-[80%] lg:w-[50%] xl:w-[40%]"
       >
         {/* add honey pot */}
         <input type="text" name="_honey" className="hidden" />
@@ -89,7 +89,7 @@ function contact() {
         <div className="flex justify-center items-center">
           <button
             type="submit"
-            className="uppercase tracking-wider py-2 px-5 text-center w-[40%] md:w-[20%] lg:w-[15%] bg-[#F4e9e7] mt-8"
+            className="uppercase tracking-wider shadow-sm py-2 px-5 text-center w-[40%] md:w-[20%] lg:w-[15%] bg-[#F4e9e7]  mt-8 hover:bg-[#f6f0ef] hover:transition-all hover:duration-500 ease-out duration-500"
           >
             Send
           </button>
