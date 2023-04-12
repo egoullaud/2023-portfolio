@@ -1,11 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {
-  RiLinkedinLine,
-  RiGithubLine,
-  RiGithubFill,
-  RiLinkedinFill,
-} from "react-icons/ri";
+import { RiLinkedinLine, RiGithubLine } from "react-icons/ri";
 import { GrClose, GrMenu } from "react-icons/gr";
 import Link from "next/link";
 
@@ -107,15 +102,15 @@ export default function NavBar() {
             href="https://www.linkedin.com/in/lee-goullaud/"
             target="_blank"
           >
-            <li className="uppercase tracking-wider  ">
+            <li className=" ml-4">
               {" "}
-              <RiLinkedinLine className="text-2xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
+              <RiLinkedinLine className="text-3xl mr-2 rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
             </li>
           </Link>
           <Link href="https://github.com/egoullaud" target="_blank">
             <li className="uppercase tracking-wider">
               {" "}
-              <RiGithubLine className="text-2xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
+              <RiGithubLine className="text-3xl rounded p-1 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
             </li>
           </Link>
         </ul>
