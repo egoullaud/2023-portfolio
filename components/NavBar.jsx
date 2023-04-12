@@ -21,7 +21,7 @@ export default function NavBar() {
       {/* Mobile */}
       <div className="w-[100%] block lg:hidden md:px-[2rem]">
         <div className="flex justify-between items-center mx-[2rem] w-[100%] pb-[1rem]">
-          <h1 className=" pt-[1rem] font-alike uppercase tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300">
+          <h1 className=" pt-[1rem] font-alike uppercase tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500 ease-out duration-300">
             <Link href="/"> lg.</Link>
           </h1>
           <div
@@ -44,22 +44,22 @@ export default function NavBar() {
         >
           <ul className="z-30 flex flex-col  bg-white justify-center items-center pt-[1rem] md:pt-[10rem] md:justify-start font-hind font-thin text-2xl w-[100%] h-full">
             <Link href="/">
-              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
                 Home
               </li>
             </Link>
             <Link href="/work">
-              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
                 Work
               </li>
             </Link>
             <Link href="/about">
-              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F] ">
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500 ">
                 About
               </li>
             </Link>
             <Link href="/contact">
-              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
                 Contact
               </li>
             </Link>
@@ -79,27 +79,27 @@ export default function NavBar() {
       </div>
       {/* Desktop */}
       <div className="hidden lg:flex lg:justify-between lg:items-center lg:mx-[10rem] lg:my-[1rem]">
-        <h1 className=" font-alike uppercase tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+        <h1 className=" font-alike uppercase tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
           <Link href="/"> lg.</Link>
         </h1>
         <ul className="flex justify-center text-sm items-center font-hind font-thin w-[40%] xl:w-[30%]">
           <Link href="/">
-            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
               Home
             </li>
           </Link>
           <Link href="/work">
-            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
               Work
             </li>
           </Link>
           <Link href="/about">
-            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
               About
             </li>
           </Link>
           <Link href="/contact">
-            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
               Contact
             </li>
           </Link>
