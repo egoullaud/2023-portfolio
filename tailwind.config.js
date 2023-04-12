@@ -8,10 +8,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      openSans: "var(--openSans-font)",
-      lora: "var(--lora-font)",
+      alike: "var(--alike-font)",
+      hind: "var(--hind-font)",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('../public/hero2.png')",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,20 +1,23 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import "@/styles/globals.css";
-import { Open_Sans, Lora } from "next/font/google";
+import { Alike, Hind_Guntur } from "@next/font/google";
 
-const openSans = Open_Sans({
-  subsets: ["latin-ext"],
-  variable: "--openSans-font",
-});
-const lora = Lora({
+const alike = Alike({
   subsets: ["latin"],
-  variable: "--lora-font",
+  variable: "--alike-font",
+  weight: ["400"],
+});
+
+const hind = Hind_Guntur({
+  subsets: ["latin"],
+  variable: "--hind-font",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${openSans.variable}, ${lora.variable}`}>
+    <main className={`${alike.variable} font-alike,${hind.variable} font-hind`}>
       <NavBar />
       <Component {...pageProps} />
       <Footer />
