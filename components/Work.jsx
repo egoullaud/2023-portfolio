@@ -13,22 +13,22 @@ function Work() {
         my recent work
       </h3>
       <ul className="block  mx-8 md:items-center md:columns-2  lg:columns-3 lg:h-[100vh] gap-8 pb-10">
-        <li className="mb-4  shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-span-1 ease-out duration-500">
+        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-span-1 ease-out duration-500">
           <Link href="#">
             <Image src={strolls}></Image>
           </Link>
         </li>
-        <li className="mb-4  shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-2 ease-out duration-500">
+        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-2 ease-out duration-500">
           <Link href="#">
             <Image src={sixpo}></Image>
           </Link>
         </li>
-        <li className="mb-4  shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-2 ease-out duration-500 ">
+        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-2 ease-out duration-500 ">
           <Link href="#">
             <Image src={gfms}></Image>
           </Link>
         </li>
-        <li className="mb-4 shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-3 ease-out duration-500">
+        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-3 ease-out duration-500">
           <Link href="#">
             <Image src={raine}></Image>
           </Link>
