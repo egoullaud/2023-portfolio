@@ -21,7 +21,7 @@ export default function NavBar() {
       {/* Mobile */}
       <div className="w-[100%] block lg:hidden md:px-[2rem]">
         <div className="flex justify-between items-center mx-[2rem] w-[100%] pb-[1rem]">
-          <h1 className=" pt-[1rem] font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300">
+          <h1 className=" pt-[1rem] font-alike uppercase tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F] ease-out duration-300">
             <Link href="/"> lg.</Link>
           </h1>
           <div
@@ -42,7 +42,7 @@ export default function NavBar() {
               : "fixed  z-40 top-0 left-0 bottom-0 w-[100%] transition-all duration-1000"
           }
         >
-          <ul className="z-30 flex flex-col  bg-white justify-center items-center pt-[1rem] md:pt-[10rem] md:justify-start font-openSans font-thin text-2xl w-[100%] h-full">
+          <ul className="z-30 flex flex-col  bg-white justify-center items-center pt-[1rem] md:pt-[10rem] md:justify-start font-hind font-thin text-2xl w-[100%] h-full">
             <Link href="/">
               <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#4d574F]">
                 Home
@@ -68,10 +68,10 @@ export default function NavBar() {
                 href="https://www.linkedin.com/in/lee-goullaud/"
                 target="_blank"
               >
-                <RiLinkedinFill className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
+                <RiLinkedinLine className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
               </Link>
               <Link href="https://github.com/egoullaud" target="_blank">
-                <RiGithubFill className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
+                <RiGithubLine className="m-4 text-5xl rounded p-2 hover:bg-[#f3efeb] hover:transition-all hover:duration-500 ease-out duration-500" />
               </Link>
             </li>
           </ul>
@@ -79,10 +79,10 @@ export default function NavBar() {
       </div>
       {/* Desktop */}
       <div className="hidden lg:flex lg:justify-between lg:items-center lg:mx-[10rem] lg:my-[1rem]">
-        <h1 className=" font-lora font-medium tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
+        <h1 className=" font-alike uppercase tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#4d574F]">
           <Link href="/"> lg.</Link>
         </h1>
-        <ul className="flex justify-center text-sm items-center font-openSans font-thin w-[40%] xl:w-[30%]">
+        <ul className="flex justify-center text-sm items-center font-hind font-thin w-[40%] xl:w-[30%]">
           <Link href="/">
             <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#4d574F]">
               Home
