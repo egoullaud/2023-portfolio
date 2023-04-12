@@ -23,11 +23,11 @@ function Hero() {
       </div>
       {/* CTA */}
       <div className="flex flex-col justify-center items-center py-[4rem]  mx-[2rem] md:mx-[6rem] md:py-[8rem] lg:py-[10rem] xl:py-[14rem]">
-        <h3 className="font-alike text-center leading-[1.2] lowercase tracking-widest pb-[1rem] md:pb-[2rem] text-[1.2rem] md:text-[2rem] lg:text-3xl xl:text-4xl">
+        <h3 className="font-alike text-center leading-[1.2] lowercase tracking-widest mb-[2rem] text-xl md:text-[2rem]">
           Your dream website custom-built for you
         </h3>
         <Link href="/about">
-          <button className="text-[.8rem] md:text-xl lg:text-base xl:text-2xl font-hind uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
+          <button className="text-xs font-hind uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500 md:text-[1.2rem]">
             learn more
           </button>
         </Link>
