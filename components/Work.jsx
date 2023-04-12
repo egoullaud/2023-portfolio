@@ -8,27 +8,27 @@ import strolls from "../public/strolls-cover.jpg";
 
 function Work() {
   return (
-    <div className="md:mx-[4rem]">
+    <div className="md:mx-[4rem] ">
       <h3 className="font-lora text-center leading-[1.2] lowercase tracking-widest mb-[2rem] text-[1.5rem] md:text-[2rem]">
         my recent work
       </h3>
-      <ul className="block  mx-8 md:items-center md:columns-2  lg:columns-3 lg:h-[100vh] gap-8 pb-10">
-        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-span-1 ease-out duration-500">
+      <ul className="md:columns-2 lg:columns-3 lg:h-[100vh] gap-8">
+        <li className="mb-4 lg:w-[90%] md:break-after-avoid lg:break-after-auto shadow-md hover:scale-95 hover:transition-all hover:duration-500  ease-out duration-500">
           <Link href="#">
             <Image src={strolls}></Image>
           </Link>
         </li>
-        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-2 ease-out duration-500">
+        <li className="mb-4 lg:w-[90%] lg:break-after-avoid shadow-md hover:scale-95 hover:transition-all hover:duration-500  ease-out duration-500">
           <Link href="#">
             <Image src={sixpo}></Image>
           </Link>
         </li>
-        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-2 ease-out duration-500 ">
+        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 ease-out duration-500 ">
           <Link href="#">
             <Image src={gfms}></Image>
           </Link>
         </li>
-        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500 lg:col-start-3 ease-out duration-500">
+        <li className="mb-4 lg:w-[90%] shadow-md hover:scale-95 hover:transition-all hover:duration-500  ease-out duration-500">
           <Link href="#">
             <Image src={raine}></Image>
           </Link>
