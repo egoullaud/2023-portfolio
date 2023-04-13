@@ -1,13 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import aboutMe from "../public/about-me.png";
 import landscape1 from "../public/landscape1.jpg";
-import me2 from "../public/IMG-2424.jpg";
 import doggos from "../public/doggos.jpg";
 import portrait2 from "../public/portrait2.jpg";
-import blueLand from "../public/blue-land.jpg";
 import Skills from "@/components/Skills";
 
 function about() {
