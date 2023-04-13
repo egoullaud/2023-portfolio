@@ -42,7 +42,12 @@ export default function about() {
         <p className="font-hind font-thin md:ml-[2rem] mb-2 lg:mr-[6rem]">
           If you are a company or recruiter looking to hire a fullstack
           developer,{" "}
-          <Link href="/">
+          <Link
+            rel="noopener noreferrer"
+            href="/files/lee_goullaud_resume.pdf"
+            target="_blank"
+            alt="Lee Goullaud Resume PDF"
+          >
             <button className="underline hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
               check out my resume here!
             </button>
