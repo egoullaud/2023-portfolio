@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import client from "../apolloClient";
+import { gql } from "@apollo/client";
 
-function contact() {
+export default function contact({ projects }) {
   return (
     <div className="my-[2rem] flex flex-col items-center justify-center">
       <h1 className="text-center leading-[1.25] font-alike lowercase tracking-wider text-5xl md:text-6xl pb-[2rem] ">
@@ -99,4 +101,25 @@ function contact() {
   );
 }
 
-export default contact;
+export async function getStaticProps() {
+  const { data } = await client.query({
+    query: gql`
+      {
+        projects(first: 4) {
+          title
+          slug
+          id
+          preview
+          coverImage {
+            url
+          }
+        }
+      }
+    `,
+  });
+  return {
+    props: {
+      projects: data.projects,
+    },
+  };
+}

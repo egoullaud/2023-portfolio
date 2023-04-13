@@ -6,8 +6,10 @@ import landscape1 from "../public/landscape1.jpg";
 import doggos from "../public/doggos.jpg";
 import portrait2 from "../public/portrait2.jpg";
 import Skills from "@/components/Skills";
+import client from "../apolloClient";
+import { gql } from "@apollo/client";
 
-function about() {
+export default function about({ projects }) {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex ">
@@ -66,4 +68,25 @@ function about() {
   );
 }
 
-export default about;
+export async function getStaticProps() {
+  const { data } = await client.query({
+    query: gql`
+      {
+        projects(first: 4) {
+          title
+          slug
+          id
+          preview
+          coverImage {
+            url
+          }
+        }
+      }
+    `,
+  });
+  return {
+    props: {
+      projects: data.projects,
+    },
+  };
+}
