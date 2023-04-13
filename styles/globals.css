@@ -15,3 +15,47 @@ html {
 .flex.hero {
   z-index: 0;
 }
+
+.project-copy p {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.project-copy ul {
+  list-style-type: disc;
+  text-align: left;
+}
+.project-copy li {
+  margin-left: 2rem;
+}
+
+.project-copy h4 {
+  font-family: "Alike", "serif";
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  .project-copy h4 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-copy p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+  .project-copy h4 {
+    font-size: 1.9rem;
+  }
+  .project-copy ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+}
