@@ -42,7 +42,7 @@ function about() {
             </button>
           </Link>
         </p>
-        <p className="font-openSans font-thin md:ml-[2rem] mb-2 lg:mr-[6rem]">
+        <p className="font-hind font-thin md:ml-[2rem] mb-2 lg:mr-[6rem]">
           If you are a company or recruiter looking to hire a fullstack
           developer,{" "}
           <Link href="/">
