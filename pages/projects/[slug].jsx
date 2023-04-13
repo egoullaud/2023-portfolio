@@ -18,17 +18,35 @@ export default function projectPage({ project }) {
         <p className="font-hind text-center italic font-thin md:text-xl">
           {project.techstack}
         </p>
+        <div className="flex justify-center items-center text-sm md:text-base font-hind font-thin w-[100%] md:w-[80%] ">
+          <Link href={project.websiteUrl}>
+            <button className="mr-4 lg:mr-8 uppercase tracking-wider shadow-sm py-2 px-3 text-center w-[100%] bg-[#d9d4d0]  mt-8 hover:bg-[#f6f0ef] hover:transition-all hover:duration-500 ease-out duration-500">
+              Website
+            </button>
+          </Link>
+          <Link href={project.githubUrl}>
+            <button className=" ml-4 lg:ml-8 uppercase tracking-wider shadow-sm py-2 px-3 text-center w-[100%] bg-[#d9d4d0]  mt-8 hover:bg-[#f6f0ef] hover:transition-all hover:duration-500 ease-out duration-500">
+              GitHub
+            </button>
+          </Link>
+        </div>
         <Image
-          className=" md:hidden object-fit "
-          src={project.deskImage.url}
-          width={project.deskImage.width}
-          height={project.deskImage.height}
+          className=" md:w-[90%] lg:w-[50%] object-fit "
+          src={project.compilation.url}
+          width={project.compilation.width}
+          height={project.compilation.height}
           alt=""
         ></Image>
         {/* images medium screen*/}
-        <div className=" hidden md:flex flex-col items-center justify-center md:flex-row px-[3rem] md:px-[4rem] lg:px-[8rem] xl:px-[14rem]">
+
+        {/* project copy */}
+        <div className="project-copy flex flex-col justify-center items-center font-hind tracking-[.03em] font-thin  mx-[0.5rem] md:mx-[6rem] xl:w-[55%] lg:w-[60%] mt-4 md:mt-[0] mb-[2rem] ">
+          <p dangerouslySetInnerHTML={{ __html: project.description.html }}></p>
+        </div>
+
+        <div className=" flex flex-col items-center justify-center md:flex-row px-[3rem] md:px-[4rem] lg:px-[8rem] xl:px-[14rem]">
           <Image
-            className="mb-6 md:w-[27%] object-fit md:mr-4"
+            className="mb-6 md:w-[20%] object-fit md:mr-4"
             src={project.tabletImage.url}
             width={project.tabletImage.width}
             height={project.tabletImage.height}
@@ -36,49 +54,14 @@ export default function projectPage({ project }) {
           ></Image>
 
           <Image
-            className="mb-6 md:w-[40%] object-fit md:mr-4"
+            className="mb-6 md:w-[55%] lg:w-[50%] object-fit md:mr-4"
             src={project.deskImage.url}
             width={project.deskImage.width}
             height={project.deskImage.height}
             alt=""
           ></Image>
           <Image
-            className="mb-6 md:w-[27%] object-fit "
-            src={project.mobileImage.url}
-            width={project.mobileImage.width}
-            height={project.mobileImage.height}
-            alt=""
-          ></Image>
-        </div>
-
-        {/* project copy */}
-        <div className="project-copy flex flex-col justify-center items-center font-hind tracking-[.03em] font-thin  mx-[0.5rem] md:mx-[6rem] xl:w-[55%] lg:w-[60%] mt-4 md:mt-[0] mb-[2rem] ">
-          <div className="flex justify-around items-center w-[50%] mb-4">
-            <Link href={project.websiteUrl}>
-              <button className="font-hind uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
-                Website
-              </button>
-            </Link>
-            <Link href={project.githubUrl}>
-              <button className="font-hind uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
-                GitHub
-              </button>
-            </Link>
-          </div>
-          <p dangerouslySetInnerHTML={{ __html: project.description.html }}></p>
-        </div>
-
-        <div className=" flex md:hidden flex-col items-center justify-center md:flex-row px-[3rem] pb-[2rem] md:px-[4rem] lg:px-[8rem] xl:px-[14rem]">
-          <Image
-            className="mb-6 md:w-[27%] object-fit md:mr-4"
-            src={project.tabletImage.url}
-            width={project.tabletImage.width}
-            height={project.tabletImage.height}
-            alt=""
-          ></Image>
-
-          <Image
-            className="mb-6 md:w-[27%] object-fit "
+            className="mb-6 md:w-[20%] object-fit "
             src={project.mobileImage.url}
             width={project.mobileImage.width}
             height={project.mobileImage.height}
@@ -121,6 +104,11 @@ export async function getStaticProps({ params }) {
           websiteUrl
           githubUrl
           preview
+          compilation {
+            url
+            height
+            width
+          }
           coverImage {
             url
             height
