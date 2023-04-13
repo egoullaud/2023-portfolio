@@ -3,7 +3,7 @@ import client from "../apolloClient";
 import { gql } from "@apollo/client";
 import { ProjectCoverList } from "@/components/ProjectCoverList";
 
-function work({ projects }) {
+export default function work({ projects }) {
   return (
     <div className=" flex flex-col items-center mx-[2rem] my-[4rem] ">
       <h1 className="text-left leading-[1.25] font-alike lowercase tracking-wider text-5xl md:text-6xl pb-[2rem] md:pb-[4rem]">
@@ -13,8 +13,6 @@ function work({ projects }) {
     </div>
   );
 }
-
-export default work;
 
 export async function getStaticProps() {
   const { data } = await client.query({
