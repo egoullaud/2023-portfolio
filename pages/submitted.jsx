@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-function contact() {
+function submitted() {
   return (
     <div className="my-[4rem] flex flex-col items-center justify-center">
       <h1 className="text-center  leading-[1.25] font-alike lowercase tracking-wider text-5xl md:text-6xl pb-[2rem] ">
@@ -34,4 +34,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default submitted;

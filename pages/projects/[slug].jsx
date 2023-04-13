@@ -95,7 +95,7 @@ export default function projectPage({ project }) {
 export async function getStaticPaths() {
   const { data } = await client.query({
     query: gql`
-      query PROJECT_SLUGLIST {
+      {
         projects {
           slug
         }
@@ -157,9 +157,10 @@ export async function getStaticProps({ params }) {
     `,
     variables: { slug },
   });
+  const project = data.project;
   return {
     props: {
-      project: data.project,
+      project,
     },
   };
 }
