@@ -35,7 +35,7 @@ export default function projectPage({ project }) {
           src={project.compilation.url}
           width={project.compilation.width}
           height={project.compilation.height}
-          alt=""
+          alt="Views of desktop, tablet, and iphone websites"
         ></Image>
         {/* images medium screen*/}
 
@@ -50,7 +50,7 @@ export default function projectPage({ project }) {
             src={project.tabletImage.url}
             width={project.tabletImage.width}
             height={project.tabletImage.height}
-            alt=""
+            alt="View of website on a tablet device"
           ></Image>
 
           <Image
@@ -58,14 +58,14 @@ export default function projectPage({ project }) {
             src={project.deskImage.url}
             width={project.deskImage.width}
             height={project.deskImage.height}
-            alt=""
+            alt="view of website on a desktop screen"
           ></Image>
           <Image
             className="mb-6 md:w-[20%] object-fit "
             src={project.mobileImage.url}
             width={project.mobileImage.width}
             height={project.mobileImage.height}
-            alt=""
+            alt="view of website on a mobile device"
           ></Image>
         </div>
       </div>
