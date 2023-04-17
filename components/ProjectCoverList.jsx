@@ -23,7 +23,7 @@ export function ProjectCoverList({ projects }) {
               <div>
                 <Image
                   src={project.coverImage.url}
-                  alt=""
+                  alt="Project cover photo"
                   width="4000"
                   height="2800"
                 ></Image>
