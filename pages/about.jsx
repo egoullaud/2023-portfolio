@@ -44,7 +44,7 @@ export default function about() {
           developer,{" "}
           <Link
             rel="noopener noreferrer"
-            href="/files/lee_goullaud_resume.pdf"
+            href="/files/lee_goullaud_2023.pdf"
             target="_blank"
             alt="Lee Goullaud Resume PDF"
           >
