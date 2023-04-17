@@ -12,7 +12,11 @@ export default function about() {
     <div className="flex flex-col justify-center items-center">
       <div className="flex ">
         <div className="w-[100%] md:w-[75%] lg:w-[45%] xl:w-[45%] lg:ml-[8rem] xl:ml-[10rem]">
-          <Image src={aboutMe} className="object-cover"></Image>
+          <Image
+            src={aboutMe}
+            alt="Headshot of Lee Goullaud (she/they) standing in front of a white background smiling in a denim collar shirt and beanie"
+            className="object-cover"
+          ></Image>
         </div>
         <div className=" relative justify-center left-[-10%] md:left-[-8%] lg:left-[-5%] xl:left-[-0%] w-[63%] md:w-[50%] lg:w-[55%] xl:w-[55%] mt-[4rem]  md:mt-[9rem] lg:mt-[8rem] xl:mt-[10rem]">
           <h1 className="w-[100%] text-left font-alike  tracking-wide text-[1.7rem] md:text-6xl xl:text-7xl">
@@ -59,13 +63,19 @@ export default function about() {
         <Image
           className="mb-6 md:w-[27%] object-fit md:mr-4"
           src={portrait2}
+          alt="Portrait shot of Lee smiling outside with a green collared short sleeve shirt and pink backpack, with green grass in the background."
         ></Image>
 
         <Image
           className="mb-6 md:w-[40%] object-fit md:mr-4"
           src={landscape1}
+          alt="landscape photos of a lake surrounded by evergreen trees from the Sunshine Coast, BC."
         ></Image>
-        <Image className="mb-6 md:w-[27%] object-fit " src={doggos}></Image>
+        <Image
+          className="mb-6 md:w-[27%] object-fit"
+          alt="Shot of a two Australian Cattle dogs, one black and one white sitting together on a wooden step with a painted floral background"
+          src={doggos}
+        ></Image>
       </div>
     </div>
   );
