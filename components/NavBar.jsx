@@ -16,7 +16,7 @@ export default function NavBar() {
       {/* Mobile */}
       <div className="w-[100%] block lg:hidden md:px-[2rem]">
         <div className="flex justify-between items-center mx-[2rem] w-[100%] pb-[1rem]">
-          <h1 className=" pt-[1rem] font-alike uppercase tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500 ease-out duration-300">
+          <h1 className=" pt-[1rem] font-alike uppercase tracking-wider text-4xl hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
             <Link href="/"> lg.</Link>
           </h1>
           <div
