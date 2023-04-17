@@ -10,7 +10,11 @@ function Hero() {
     <div className="flex flex-col">
       <div className="flex md:mt-2">
         <div className="w-[100%] md:w-[75%] lg:w-[45%] xl:w-[45%] lg:ml-[8rem] xl:ml-[14rem]">
-          <Image src={hero2} className="object-cover"></Image>
+          <Image
+            src={hero2}
+            alt="Headshot of Lee Goullaud (she/they) standing in front of a white background smiling in a denim collar shirt and beanie"
+            className="object-cover"
+          ></Image>
         </div>
         <div className="relative justify-center left-[-10%] md:left-[-8%] lg:left-[-5%] xl:left-[-0%] w-[90%] md:w-[64%] lg:w-[55%] xl:w-[55%] mt-8  md:mt-[6.5rem] lg:mt-[8rem] xl:mt-[14rem]">
           <h1 className=" w-[100%] text-left font-alike  tracking-wide text-[1.7rem] md:text-6xl xl:text-7xl">
