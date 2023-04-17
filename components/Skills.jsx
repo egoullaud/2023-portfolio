@@ -8,27 +8,29 @@ export default function Skills() {
       </h3>
       <ul className="columns-2 md:columns-4 font-hind font-thin">
         <li className="mb-4">JavaScript</li>
+        <li className="mb-4">Python</li>
         <li className="mb-4">React</li>
-        <li className="mb-4">TailwindCSS</li>
+        <li className="mb-4">Next</li>
+        <li className="mb-4">Express</li>
 
-        <li className="mb-4">RESTful APIs</li>
+        <li className="mb-4">TailwindCSS</li>
+        <li className="mb-4">Bootstrap</li>
         <li className="mb-4">CSS3</li>
         <li className="mb-4">HTML5</li>
-        <li className="mb-4">Bootstrap</li>
-        <li className="mb-4">Web Accessiblity</li>
-        <li className="mb-4">Agile Methodology</li>
 
-        <li className="mb-4">NextJS</li>
+        <li className="mb-4">RESTful APIs</li>
         <li className="mb-4">MongoDB</li>
         <li className="mb-4">PostgreSQL</li>
 
         <li className="mb-4">GraphQL</li>
         <li className="mb-4">SQL</li>
-        <li className="mb-4"></li>
+
         <li className="mb-4">Git</li>
         <li className="mb-4">GitHub</li>
         <li className="mb-4">Figma</li>
-        <li className="mb-4">Responsive Web Design</li>
+        <li className="mb-4">Responsive Design</li>
+        <li className="mb-4">Web Accessiblity</li>
+        <li className="mb-4">Agile Methodology</li>
       </ul>
     </div>
   );
