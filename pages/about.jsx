@@ -26,34 +26,30 @@ export default function about() {
       </div>
       <div className="flex flex-col font-hind tracking-[.03em] font-thin text-center mx-[2rem] md:mx-[4rem] lg:mx-[8rem] xl:w-[55%] lg:w-[65%] mt-[2rem] md:mt-[3rem] lg:mt-[4rem]  ">
         <p className="mb-4">
-          I am a fullstack developer who's passionate about building digital
-          products that create accessibile, inclusive, and beautiful user
-          experiences. I am a graduate of Skillcrush UX Design and Front End
-          Coding Bootcamp and hold a BSc in Natural Resource Conservation from
-          the University of British Columbia.
+          I'm a full stack developer with 1.5 years of experience working with
+          React, Tailwind, Node and Python. I am a UX Design and Front End
+          Bootcamp graduate and created a free bootcamp for Front End Developers
+          transitioning to Full Stack.In addition to my freelance work, I am a
+          lead full stack developer with Chingu, building an application using
+          Agile methologies within an asynchronous team environment.
+        </p>
+        <p className="mb-4">
+          Prior to working in tech, I ran a sustainability and landscaping
+          company where I created client-relationships, managed projects, and
+          educated clients about sustainability in their backyards. I trained
+          teams, mentored junior landscapers, wore all the hats, and spun all
+          the plates.
         </p>
         <p className="mb-4">
           I have a deep love for learning and growth in all things, and I am at
           my best when I am creating value through custom-built websites for my
-          clients and playing fetch with my dogs. If you're interested in
-          working together,{" "}
+          clients and playing fetch with my dogs. If you're looking for a
+          versatile developer willing to jump right in and learn on the go, look
+          no further!
+          <br />
           <Link href="/contact">
             <button className="underline hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
-              get in touch here!
-            </button>
-          </Link>
-        </p>
-        <p className="font-hind font-thin md:ml-[2rem] mb-2 lg:mr-[6rem]">
-          If you are a company or recruiter looking to hire a fullstack
-          developer,{" "}
-          <Link
-            rel="noopener noreferrer"
-            href="/files/lee_goullaud_2023.pdf"
-            target="_blank"
-            alt="Lee Goullaud Resume PDF"
-          >
-            <button className="underline hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
-              check out my resume here!
+              Get in touch here!
             </button>
           </Link>
         </p>
