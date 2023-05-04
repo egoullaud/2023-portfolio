@@ -26,15 +26,27 @@ function Hero() {
         </div>
       </div>
       {/* CTA */}
-      <div className="flex flex-col justify-center items-center py-[4rem]  mx-[2rem] md:mx-[6rem] md:py-[8rem] lg:py-[10rem] xl:py-[14rem]">
-        <h3 className="font-alike text-center leading-[1.2] lowercase tracking-widest mb-[2rem] text-xl md:text-[2rem]">
-          Your dream website custom-built for you
-        </h3>
-        <Link href="/about">
-          <button className="text-xs font-hind uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500 md:text-[1.2rem]">
-            learn more
-          </button>
-        </Link>
+      <div className="flex flex-col md:flex-row justify-center items-center py-[4rem] gap-4 mx-[2rem] md:mx-[3rem] md:py-[8rem] lg:py-[10rem] xl:py-[14rem]">
+        <div className="flex flex-col items-center justify-center md:w-[50%] md:border-r-2 pl-[1rem] py-[2rem]">
+          <h3 className="font-alike text-center leading-[1.2] lowercase tracking-widest pb-[2rem] text-xl md:text-[2rem]">
+            are you looking for a custom website design or build?
+          </h3>
+          <Link href="/about">
+            <button className="text-xs font-hind uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500 md:text-[1.2rem]">
+              work with me
+            </button>
+          </Link>
+        </div>
+        <div className="flex flex-col items-center justify-center md:w-[50%] py-[2rem]">
+          <h3 className="font-alike text-center leading-[1.2] lowercase tracking-widest pb-[2rem] text-xl md:text-[2rem]">
+            Are you a Front End Developer transitioning to Full stack?
+          </h3>
+          <Link href="/">
+            <button className="text-xs font-hind uppercase tracking-wider font-thin hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500 md:text-[1.2rem]">
+              Free bootcamp coming soon
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
