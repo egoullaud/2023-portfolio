@@ -19,6 +19,7 @@ export default function Skills() {
         <li className="mb-4">HTML5</li>
 
         <li className="mb-4">RESTful APIs</li>
+        <li className="mb-4">Firebase</li>
         <li className="mb-4">MongoDB</li>
         <li className="mb-4">PostgreSQL</li>
 
@@ -31,6 +32,8 @@ export default function Skills() {
         <li className="mb-4">Responsive Design</li>
         <li className="mb-4">Web Accessiblity</li>
         <li className="mb-4">Agile Methodology</li>
+        <li className="mb-4">Vercel, Netlify, Railway</li>
+        <li className="mb-4">Windows, MacOS, Linux</li>
       </ul>
     </div>
   );
