@@ -60,7 +60,7 @@ export default function NavBar() {
             </Link>
             <Link
               rel="noopener noreferrer"
-              href="/files/resume.pdf"
+              href="/files/resume1.pdf"
               target="_blank"
               alt="Lee Goullaud Resume PDF"
             >
@@ -110,7 +110,7 @@ export default function NavBar() {
           </Link>
           <Link
             rel="noopener noreferrer"
-            href="/files/resume.pdf"
+            href="/files/resume1.pdf"
             target="_blank"
             alt="Lee Goullaud Resume PDF"
           >
