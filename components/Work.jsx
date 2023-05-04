@@ -5,7 +5,7 @@ import { ProjectCoverList } from "./ProjectCoverList";
 
 export default function Work({ projects }) {
   return (
-    <div className=" flex flex-col items-center md:mx-[4rem] my-[4rem]">
+    <div className=" flex flex-col items-center md:mx-[4rem] mb-[4rem]">
       <h3 className="font-alike text-center leading-[1.2] lowercase tracking-widest mb-[2rem] text-xl md:text-[2rem]">
         my recent work
       </h3>

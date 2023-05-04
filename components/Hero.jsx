@@ -26,7 +26,7 @@ function Hero() {
         </div>
       </div>
       {/* CTA */}
-      <div className="flex flex-col md:flex-row justify-center items-center py-[4rem] gap-4 mx-[2rem] md:mx-[3rem] md:py-[8rem] lg:py-[10rem] xl:py-[14rem]">
+      <div className="flex flex-col md:flex-row justify-center items-center py-[4rem] gap-4 mx-[2rem] md:mx-[3rem] md:py-[8rem]">
         <div className="flex flex-col items-center justify-center md:w-[50%] md:border-r-2 pl-[1rem] py-[2rem]">
           <h3 className="font-alike text-center leading-[1.2] lowercase tracking-widest pb-[2rem] text-xl md:text-[2rem]">
             are you looking for a custom website design or build?
