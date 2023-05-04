@@ -58,6 +58,16 @@ export default function NavBar() {
                 Contact
               </li>
             </Link>
+            <Link
+              rel="noopener noreferrer"
+              href="/files/resume.pdf"
+              target="_blank"
+              alt="Lee Goullaud Resume PDF"
+            >
+              <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
+                Resume
+              </li>
+            </Link>
             <li className=" flex justify-between uppercase tracking-wider  ">
               <Link
                 href="https://www.linkedin.com/in/lee-goullaud/"
@@ -96,6 +106,16 @@ export default function NavBar() {
           <Link href="/contact">
             <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
               Contact
+            </li>
+          </Link>
+          <Link
+            rel="noopener noreferrer"
+            href="/files/resume.pdf"
+            target="_blank"
+            alt="Lee Goullaud Resume PDF"
+          >
+            <li className="uppercase tracking-wider mx-2 hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
+              Resume
             </li>
           </Link>
           <Link
