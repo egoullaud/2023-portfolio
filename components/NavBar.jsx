@@ -53,7 +53,7 @@ export default function NavBar() {
                 About
               </li>
             </Link>
-            <Link href="/contact">
+{/*             <Link href="/contact">
               <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
                 Contact
               </li>
@@ -67,7 +67,7 @@ export default function NavBar() {
               <li className="uppercase tracking-wider m-[2rem] hover:transition-all hover:duration-500 hover:text-[#9aa9b5] ease-out duration-500">
                 Resume
               </li>
-            </Link>
+            </Link> */}
             <li className=" flex justify-between uppercase tracking-wider  ">
               <Link
                 href="https://www.linkedin.com/in/lee-goullaud/"
