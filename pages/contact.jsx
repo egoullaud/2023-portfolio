@@ -20,85 +20,8 @@ export default function contact() {
             </button>
           </Link>
         </p>
-        <form
-          action="https://formsubmit.co/aa9ace4fce53046497cccee0c34e5c3f"
-          method="POST"
-          className="flex flex-col font-hind tracking-wider font-thin text-[#2c2c2c] mb-[2rem] w-[90%] md:w-[80%] lg:w-[75%]"
-        >
-          {/* add honey pot */}
-          <input type="text" name="_honey" className="hidden" />
-          {/*remove captcha  */}
-          <input type="hidden" name="_captcha" value="false" />
-          {/* redirect to success page on submit! */}
-          <input
-            type="hidden"
-            name="_next"
-            value="http://www.leegoullaud.com/submitted"
-          />
-
-          <div className="flex flex-col md:flex-row">
-            <div className="flex flex-col md:w-[50%] md:mr-2">
-              <label className="italic py-1" htmlFor="firstName">
-                First name
-              </label>
-              <input
-                className="mb-5 p-2 border-black border-[1px]"
-                type="text"
-                name="first name"
-                required
-              />
-            </div>
-            <div className="flex flex-col md:w-[50%] md:ml-2">
-              <label className="italic py-1" htmlFor="lastName">
-                Last name
-              </label>
-              <input
-                className="mb-5 p-2 border-black border-[1px]"
-                type="text"
-                name="last name"
-                required
-              />
-            </div>
-          </div>
-          <label className="italic py-1" htmlFor="email">
-            Email
-          </label>
-          <input
-            className="mb-5 p-2 border-black border-[1px]"
-            type="email"
-            name="email"
-            required
-          />
-          <label className="italic py-1" htmlFor="subject">
-            Subject
-          </label>
-          <input
-            className="mb-5 p-2 border-black border-[1px]"
-            type="text"
-            name="subject"
-            required
-          />
-          <label className="italic py-1" htmlFor="message">
-            Message
-          </label>
-          <textarea
-            className="mb-5 p-2 border-black border-[1px]"
-            type="text"
-            name="message"
-            rows={8}
-            cols={30}
-            required
-          />
-          <div className="flex justify-center items-center">
-            <button
-              type="submit"
-              className="uppercase tracking-wider shadow-sm py-2 px-5 text-center w-[40%] md:w-[20%] lg:w-[15%] bg-[#F4e9e7]  mt-8 hover:bg-[#f6f0ef] hover:transition-all hover:duration-500 ease-out duration-500"
-            >
-              Send
-            </button>
-          </div>
-        </form>
       </div>
+
 
       <Image
         src={forHire}
